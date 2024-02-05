@@ -4,11 +4,11 @@
 Brain::Brain(){
 }
 
-Brain::Brain(Brain & cp){
+Brain::Brain(const Brain & cp){
 	*this = cp; 
 }
 
-Brain &Brain::operator=(Brain &cp){
+Brain &Brain::operator=(const Brain &cp){
 	if (this == &cp)
 		return *this;
 	for (int i = 0; i < 100 ; i++)

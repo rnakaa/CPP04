@@ -7,7 +7,7 @@ Animal::Animal(std::string type){
 	this->type = type;
 }
 
-Animal &Animal::operator=(Animal &cp){
+Animal &Animal::operator=(const Animal &cp){
 	if (this == &cp){
 		return *this;
 	}
@@ -15,7 +15,7 @@ Animal &Animal::operator=(Animal &cp){
 	return *this;
 }
 
-Animal::Animal(Animal &cp){
+Animal::Animal(const Animal &cp){
 	*this = cp;
 }
 

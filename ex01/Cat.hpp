@@ -7,8 +7,8 @@ class Cat : public Animal{
 		Brain *_brain;
 	public:
 		Cat();
-		Cat(Cat &cp);
-		Cat &operator=(Cat &cp);
+		Cat(const Cat &cp);
+		Cat &operator=(const Cat &cp);
 		~Cat();
 		virtual void makeSound()const;
 };

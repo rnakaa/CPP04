@@ -7,8 +7,8 @@ class Dog : public Animal{
 		Brain *_brain;
 	public:
 		Dog(); 
-		Dog(Dog &cp);
-		Dog &operator=(Dog &cp);
+		Dog(const Dog &cp);
+		Dog &operator=(const Dog &cp);
 		~Dog();
 		virtual void makeSound()const;
 };

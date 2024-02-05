@@ -7,7 +7,7 @@ WrongAnimal::WrongAnimal(std::string type){
 	this->type = type;
 }
 
-WrongAnimal &WrongAnimal::operator=(WrongAnimal &cp){
+WrongAnimal &WrongAnimal::operator=(const WrongAnimal &cp){
 	if (this == &cp){
 		return *this;
 	}
@@ -15,7 +15,7 @@ WrongAnimal &WrongAnimal::operator=(WrongAnimal &cp){
 	return *this;
 }
 
-WrongAnimal::WrongAnimal(WrongAnimal &cp){
+WrongAnimal::WrongAnimal(const WrongAnimal &cp){
 	*this = cp;
 }
 

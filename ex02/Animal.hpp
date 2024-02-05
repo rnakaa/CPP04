@@ -9,8 +9,8 @@ class Animal{
 	public:
 		Animal();
 		Animal(std::string type);
-		Animal(Animal &cp);
-		Animal &operator=(Animal &cp);
+		Animal(const Animal &cp);
+		Animal &operator=(const Animal &cp);
 		virtual ~Animal();
 		std::string getType()const;
 		virtual void makeSound()const = 0;

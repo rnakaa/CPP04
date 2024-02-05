@@ -4,11 +4,11 @@
 Dog::Dog():Animal("dog"){
 }
 
-Dog::Dog(Dog &cp){
+Dog::Dog(const Dog &cp){
 	*this = cp;
 }
 
-Dog &Dog::operator=(Dog &cp){
+Dog &Dog::operator=(const Dog &cp){
 	if (this == &cp){
 		return *this;
 	}

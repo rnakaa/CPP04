@@ -5,11 +5,11 @@ Cat::Cat():Animal("cat"), _brain(new Brain()){
 	std::cout << "Cat Derault constructor called\n";
 }
 
-Cat::Cat(Cat &cp){
+Cat::Cat(const Cat &cp){
 	*this = cp;
 }
 
-Cat &Cat::operator=(Cat &cp){
+Cat &Cat::operator=(const Cat &cp){
 	if (this == &cp){
 		return *this;
 	}

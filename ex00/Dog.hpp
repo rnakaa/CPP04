@@ -4,8 +4,8 @@
 class Dog : public Animal{
 	public:
 		Dog(); 
-		Dog(Dog &cp);
-		Dog &operator=(Dog &cp);
+		Dog(const Dog &cp);
+		Dog &operator=(const Dog &cp);
 		~Dog();
 		virtual void makeSound()const;
 };

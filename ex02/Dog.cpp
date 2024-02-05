@@ -6,11 +6,11 @@ Dog::Dog():Animal("dog"), _brain(new Brain()){
 	std::cout << "Dog Default constructor called\n";
 }
 
-Dog::Dog(Dog &cp){
+Dog::Dog(const Dog &cp){
 	*this = cp;
 }
 
-Dog &Dog::operator=(Dog &cp){
+Dog &Dog::operator=(const Dog &cp){
 	if (this == &cp){
 		return *this;
 	}

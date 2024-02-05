@@ -7,8 +7,8 @@ class Brain{
 		std::string _ideas[100];
 	public:
 		Brain();
-		Brain(Brain & cp);
-		Brain &operator=(Brain &cp);
+		Brain(const Brain & cp);
+		Brain &operator=(const Brain &cp);
 		~Brain();
 };
 #endif // BRAIN

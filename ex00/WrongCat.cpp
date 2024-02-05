@@ -4,11 +4,11 @@
 WrongCat::WrongCat():WrongAnimal("wrongcat"){
 }
 
-WrongCat::WrongCat(WrongCat &cp){
+WrongCat::WrongCat(const WrongCat &cp){
 	*this = cp;
 }
 
-WrongCat &WrongCat::operator=(WrongCat &cp){
+WrongCat &WrongCat::operator=(const WrongCat &cp){
 	if (this == &cp){
 		return *this;
 	}
