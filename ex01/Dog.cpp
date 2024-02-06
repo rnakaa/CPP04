@@ -15,6 +15,7 @@ Dog &Dog::operator=(const Dog &cp){
 		return *this;
 	}
 	this->type = cp.type;
+	this->_brain = cp._brain;
 	return *this;
 }
 

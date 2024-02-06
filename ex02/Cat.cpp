@@ -14,6 +14,7 @@ Cat &Cat::operator=(const Cat &cp){
 		return *this;
 	}
 	this->type = cp.type;
+	this->_brain = cp._brain;
 	return *this;
 }
 

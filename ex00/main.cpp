@@ -31,3 +31,9 @@ int main()
 	}
 	return 0; 
 }
+
+__attribute__((destructor))
+static void destructor(void)
+{
+	system("leaks -q 'I don’t want to set the world on fire'");
+}

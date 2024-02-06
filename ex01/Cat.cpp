@@ -1,5 +1,6 @@
 #include "Animal.hpp"
 #include "Cat.hpp"
+#include "Brain.hpp"
 
 Cat::Cat():Animal("cat"), _brain(new Brain()){
 	std::cout << "Cat Derault constructor called\n";
@@ -14,6 +15,7 @@ Cat &Cat::operator=(const Cat &cp){
 		return *this;
 	}
 	this->type = cp.type;
+	this->_brain = cp._brain;
 	return *this;
 }
 
