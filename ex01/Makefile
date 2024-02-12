@@ -36,4 +36,4 @@ fclean: clean
 	rm -f $(NAME)
 
 .PHONY:re
-re:fclean all
+re: fclean all
