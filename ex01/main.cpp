@@ -25,6 +25,7 @@ int main()
 		dog2 = dog1;
 		std::cout << "dog1 idea 2 = " << dog1.getIdea(2) << std::endl;
 		std::cout << "dog2 idea 2 = " << dog2.getIdea(2) << std::endl;
+		std::cout << "deep copy" << std::endl;
 		dog1.addIdea(2, "namunamu");
 		std::cout << "dog1 idea 2 = " << dog1.getIdea(2) << std::endl;
 		std::cout << "dog2 idea 2 = " << dog2.getIdea(2) << std::endl;
